@@ -1,0 +1,16 @@
+{
+  "//": "后端是 Node CommonJS 代码：声明 Node 环境类型，避免 require/module.exports 被误标红",
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "types": ["node"],
+    "allowJs": true,
+    "checkJs": false,
+    "noEmit": true,
+    "skipLibCheck": true
+  },
+  "include": ["**/*.js"],
+  "exclude": ["node_modules", ".npm-cache"]
+}

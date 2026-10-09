@@ -1,0 +1,26 @@
+{
+  "name": "novel-web",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "小说阅读 App 网页版：Vue3 + Vite + TypeScript 前端，Node + SQLite 后端",
+  "scripts": {
+    "start": "node scripts/dev.mjs",
+    "dev": "vite",
+    "server": "node server/mock-server.js",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "vue-tsc --noEmit",
+    "smoke": "node scripts/smoke-test.mjs"
+  },
+  "dependencies": {
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.5",
+    "vue-tsc": "^2.2.0"
+  }
+}
